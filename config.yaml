@@ -1,8 +1,8 @@
-OUR_USERNAME: ""
-OUR_PASSWORD: ""
-
-SEND_USERNAME: ""
-SEND_PASSWORD: ""
-
-DATABASE_PATH: ""
-DOCUMENTS_PATH: ""
+LOG_SYMBOL: ">> " # Символ для вывода отладочной информации
+DEBUG: False # Флаг отладки
+OUR_USERNAME:     ""
+OUR_PASSWORD:     ""
+SEND_USERNAME:    ""
+SEND_PASSWORD:    ""
+DATABASE_PATH:    ""
+DOCUMENTS_PATH:   ""
