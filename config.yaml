@@ -1,8 +1,8 @@
 LOG_SYMBOL: ">> " # Символ для вывода отладочной информации
-DEBUG: False # Флаг отладки
-OUR_USERNAME:     ""
-OUR_PASSWORD:     ""
-SEND_USERNAME:    ""
-SEND_PASSWORD:    ""
-DATABASE_PATH:    ""
-DOCUMENTS_PATH:   ""
+DEBUG: True # Флаг отладки
+OUR_USERNAME:     "testcrm994@gmail.com"
+OUR_PASSWORD:     "qwerty1@"
+SEND_USERNAME:    "testcrm994@gmail.com"
+SEND_PASSWORD:    "qwerty1@"
+DATABASE_PATH:    "firm.db"
+DOCUMENTS_PATH:   "documents\\"

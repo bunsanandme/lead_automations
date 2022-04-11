@@ -149,7 +149,8 @@ def send_message_meetings(to_email=SEND_USERNAME,
         msg['Subject'] = "Приглашение на встречу"
         msg['From'] = SEND_USERNAME
         msg['To'] = to_email
-        body = open("emails_forms/email_form_meeting.txt", encoding="utf-8").read().format(name)
+        body = "https://forms.gle/igmb9SSzKvW9TksQ9 "
+        body += open("emails_forms/email_form_meeting.txt", encoding="utf-8").read().format(name)
         msg.attach(MIMEText(body, 'plain'))
         attach = MIMEApplication(open("temp_doc.docx", 'rb').read())
         attach.add_header('Content-Disposition', 'attachment', filename='Meeting.docx')

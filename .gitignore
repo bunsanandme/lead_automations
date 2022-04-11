@@ -1,2 +1,7 @@
 /__pycache__
 clients.xlsx
+flask_forms.py
+/templates
+app.py
+config.py
+setup.py

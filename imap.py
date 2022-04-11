@@ -24,9 +24,9 @@ if not os.path.exists(DATABASE_PATH):
 def get_headers_email(email_numbers, read_mode="ALL"):
     # ALL: Выводит адрес, тему письма и дату
     # E_ONLY: Список адресов
-    #
 
-    mail = imaplib.IMAP4_SSL('imap.yandex.ru')
+
+    mail = imaplib.IMAP4_SSL('imap.gmail.com')
     if DEBUG:
         print(LOG_SYMBOL + "IMAP-подключение: успешно!")
     mail.login(OUR_USERNAME, OUR_PASSWORD)
@@ -69,7 +69,7 @@ def read_work_mail():
     for item in get_headers_email(10, ):
         if item["Email"] in email_list:
             id = item["Id"].decode("utf-8").split(" ")[0]
-            mail = imaplib.IMAP4_SSL('imap.yandex.ru')
+            mail = imaplib.IMAP4_SSL('imap.gmail.com')
             mail.login(OUR_USERNAME, OUR_PASSWORD)
             mail.list()
             mail.select("inbox")
@@ -122,6 +122,3 @@ def read_work_mail():
                 os.remove(filename)
                 print("Done")
 
-
-if __name__ == "__main__":
-    read_work_mail()
